@@ -29,6 +29,88 @@
             alt="A cute orange cat lying on its back"
         /></a>
       </section>
+
+      <section>
+        <h2>Cat List</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+            alt="lasagna"
+          />
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea tretment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+            alt="other cats"
+          />
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Cat Form</h2>
+        <form action="">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <input
+              checked
+              type="radio"
+              name="indoor-outdoor"
+              id="indoor"
+              value="indoor"
+            />
+            <label for="indoor">Indoor</label>
+            <input
+              type="radio"
+              name="indoor-outdoor"
+              id="outdoor"
+              value="outdoor"
+            />
+            <label for="outdoor">Outdoor</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Personality</legend>
+            <input
+              checked
+              type="checkbox"
+              name="personality"
+              id="loving"
+              value="loving"
+            />
+            <label for="loving">Loving</label>
+            <input type="checkbox" name="personality" id="lazy" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              type="checkbox"
+              name="personality"
+              id="energetic"
+              value="energetic"
+            />
+            <label for="energetic">Energetic</label>
+          </fieldset>
+
+          <input type="text" placeholder="cat photo URL" />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
+    <footer>
+      <p>No Copyright - <a href="#">freeCodeCamp.org</a></p>
+    </footer>
   </body>
 </html>

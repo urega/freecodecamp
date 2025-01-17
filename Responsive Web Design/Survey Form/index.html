@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Destination Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Travel Destination Survey Form</h1>
+      <p id="description">
+        Fill out this survey honestly according to the actual situation.
+      </p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name:</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+
+          <label id="email-label" for="email">Email:</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label id="number-label" for="number">Age:</label>
+          <input
+            id="number"
+            type="number"
+            min="18"
+            max="40"
+            placeholder="Enter your age"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="dropdown"
+            >What is your favorite travel destination?</label
+          >
+          <select id="dropdown" name="destination" required>
+            <option value="">Select an option</option>
+            <option value="Mountains">Mountains</option>
+            <option value="Beach">Beach</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Would you recommend this travel destination to a friend?
+          </legend>
+          <label for="definitely">
+            <input
+              class="inline"
+              id="definitely"
+              type="radio"
+              name="choice"
+              value="definitely"
+              checked
+            />
+            Definitely
+          </label>
+          <label for="not-sure">
+            <input
+              class="inline"
+              id="not-sure"
+              type="radio"
+              name="choice"
+              value="not-sure"
+            />
+            Not sure
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Who do you travel with?</legend>
+          <label for="family">
+            <input
+              class="inline"
+              id="family"
+              type="checkbox"
+              name="travel-with"
+              value="family"
+            />
+            Family
+          </label>
+          <label for="friend">
+            <input
+              class="inline"
+              id="friend"
+              type="checkbox"
+              name="travel-with"
+              value="friend"
+            />
+            Friend
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Any comments or suggestions?</legend>
+          <textarea
+            id="comment"
+            name="comments"
+            rows="10"
+            cols="30"
+            placeholder="Enter your comment here.."
+          ></textarea>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
